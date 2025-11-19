@@ -7,7 +7,6 @@
 	"editor.foreground": "#D9D4A6",
 	"editor.lineHighlightBackground": "#ff9c7521",
 	"editor.selectionBackground": "#ddf0ff28",
-	"editor.selectionForeground": "#1b100f",
 	"editor.findMatchBackground": "#515c6a",
 	"editor.findMatchHighlightBackground": "#ea5c0055",
 	"editorCursor.foreground": "#FFD700",
@@ -308,13 +307,13 @@
 		// Menus (kontekstowe, dropdown)
 		"menu.background": "#2A1615",
 		"menu.foreground": "#D9D4A6",
-		// Element aktywnie wybrany w menu
-		"menu.selectionBackground": "#B3935C",
-		"menu.selectionForeground": "#180C0C",
+		// Element wybrany w menu - subtelny brąz
+		"menu.selectionBackground": "#B3935C40",
+		"menu.selectionForeground": "#e8e1b5",
 		"menu.separatorBackground": "#D9D4A633",
 		// Menu bar (górne menu)
-		"menubar.selectionBackground": "#B3935C",
-		"menubar.selectionForeground": "#180C0C",
+		"menubar.selectionBackground": "#B3935C40",
+		"menubar.selectionForeground": "#e8e1b5",
 		// Notifications
 		"notifications.background": "#2A1615",
 		"notifications.foreground": "#D9D4A6",
@@ -339,11 +338,12 @@
 		"gitDecoration.ignoredResourceForeground": "#858585",
 		"gitDecoration.untrackedResourceForeground": "#7CA563",
 		"gitDecoration.conflictingResourceForeground": "#DA5659",
-		// Editor suggestions
+		// Editor suggestions (autocomplete)
 		"editorSuggestWidget.background": "#2A1615",
 		"editorSuggestWidget.border": "#D9D4A633",
 		"editorSuggestWidget.foreground": "#D9D4A6",
-		"editorSuggestWidget.highlightForeground": "#FFD700",
+		// Highlight pasujących znaków w sugestiach (zmienione z żółtego na subtelny brąz)
+		"editorSuggestWidget.highlightForeground": "#C8A573",
 		"editorSuggestWidget.selectedBackground": "#ff9c7521",
 		"editorSuggestWidget.selectedForeground": "#e8e1b5",
 		// Editor widgets
@@ -356,10 +356,10 @@
 		// Quick input (Command Palette - CMD+SHIFT+P)
 		"quickInput.background": "#2A1615",
 		"quickInput.foreground": "#D9D4A6",
-		// Element wybrany klawiszami (aktywny)
-		"quickInputList.focusBackground": "#B3935C",
-		"quickInputList.focusForeground": "#180C0C",
-		"quickInputList.focusIconForeground": "#180C0C",
+		// Element wybrany klawiszami - subtelny brąz
+		"quickInputList.focusBackground": "#B3935C40",
+		"quickInputList.focusForeground": "#e8e1b5",
+		"quickInputList.focusIconForeground": "#e8e1b5",
 		// Debug
 		"debugToolBar.background": "#2A1615",
 		"debugToolBar.border": "#D9D4A633",
@@ -471,24 +471,25 @@
 		//"list.dropBetweenBackground": "#c5c5c5",
 		//"list.errorForeground": "#f88070",
 		//"list.filterMatchBackground": "#ea5c0055",
-		"list.focusHighlightForeground": "#878369",
-		"list.highlightForeground": "#878369",
-		// Element aktywnie wybrany (z fokusem)
-		"list.activeSelectionBackground": "#B3935C",
-		"list.activeSelectionForeground": "#180C0C",
-		"list.activeSelectionIconForeground": "#180C0C",
+		// Highlight w listach (np. Command Palette, Quick Open)
+		"list.highlightForeground": "#C8A573",
+		"list.focusHighlightForeground": "#C8A573",
+		// Element aktywnie wybrany (z fokusem) - subtelny brąz z przezroczystością
+		"list.activeSelectionBackground": "#B3935C40",
+		"list.activeSelectionForeground": "#e8e1b5",
+		"list.activeSelectionIconForeground": "#e8e1b5",
 		//"list.deemphasizedForeground": "#8c8c8c",
 		// "list.dropBackground": "#180C0C",
 		//"list.dropBetweenBackground": "#c5c5c5",
 		//"list.errorForeground": "#f88070",
-		"list.focusOutline": "#B3935C",
-		"list.focusBackground": "#B3935C",
-		"list.focusForeground": "#180C0C",
+		"list.focusOutline": "#B3935C40",
+		"list.focusBackground": "#B3935C40",
+		"list.focusForeground": "#e8e1b5",
 		//"list.highlightForeground": "#2aaaff",
-		// Element pod kursorem myszy (hover)
+		// Element pod kursorem myszy (hover) - pomarańczowy
 		"list.hoverBackground": "#ff9c7521",
 		"list.hoverForeground": "#e8e1b5",
-		// Element wybrany bez fokusu (np. gdy okno nieaktywne)
+		// Element wybrany bez fokusu
 		"list.inactiveSelectionBackground": "#ff9c7521",
 		"list.inactiveSelectionForeground": "#e8e1b5",
 		//"list.invalidItemForeground": "#b89500",
@@ -940,7 +941,7 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#679D47",
+				"foreground": "#5D8847",
 				"background": "#17201300",
 				"fontStyle": "italic"
 			}
@@ -955,7 +956,7 @@
 		{
 			"scope": "entity",
 			"settings": {
-				"foreground": "#6D4C2F",
+				"foreground": "#B3935C",
 				"fontStyle": ""
 			}
 		},
@@ -976,7 +977,7 @@
 		{
 			"scope": "string",
 			"settings": {
-				"foreground": "#7CA563",
+				"foreground": "#5D8847",
 				"fontStyle": ""
 			}
 		},
@@ -1057,7 +1058,7 @@
 		{
 			"scope": "string variable",
 			"settings": {
-				"foreground": "#5E828D",
+				"foreground": "#8BA3B0",
 				"fontStyle": ""
 			}
 		},
@@ -1237,7 +1238,7 @@
 		{
 			"scope": "punctuation.definition.comment",
 			"settings": {
-				"foreground": "#679D4770"
+				"foreground": "#5D8847"
 			}
 		},
 		{
@@ -1297,8 +1298,8 @@
 		{
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#C8A573",
-				"fontStyle": "bold"
+				"foreground": "#B3935C",
+				"fontStyle": ""
 			}
 		},
 		{

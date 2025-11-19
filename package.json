@@ -3,6 +3,7 @@
   "displayName": "Choco",
   "description": "Choco theme based on TextMate Choco theme",
   "version": "0.0.1",
+  "publisher": "yoyo",
   "engines": {
     "vscode": "^1.87.0"
   },
