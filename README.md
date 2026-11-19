@@ -6,19 +6,12 @@ Because theme is not published to VSCode marketplace yet you have to install the
 
 **Enjoy!**
 
-## Active editor tab color in VS Code 1.146+
+## Active editor tab in VS Code 1.146+
 
 VS Code's modern UI uses "connected" editor tabs by default (`workbench.experimental.modernUIEditorTabStyle`).
-In that style the active tab background is taken only from user `workbench.colorCustomizations`,
-and the tab colors defined in this theme are ignored. To get the lighter active tab, add this to your `settings.json`:
+In that style the active tab always uses the editor background and tab background colors from themes are ignored.
+This theme marks the active tab with a frame instead (`editorGroupHeader.tabsBorder`), matching the panel tabs,
+so no extra settings are needed.
 
-```jsonc
-"workbench.colorCustomizations": {
-    "[Choco by yOyO-]": {
-        "modernEditorTab.activeBackground": "#5A4335",
-        "modernEditorTab.activeHoverBackground": "#654C3C"
-    }
-}
-```
-
-The theme colors apply as is with the classic tabs or the "pill" tab style.
+The lighter active tab background defined in the theme (`tab.activeBackground`, `modernEditorTab.activeBackground`)
+applies with the classic tabs or the "pill" tab style.

@@ -119,6 +119,7 @@
 		"tab.inactiveForeground": "#E8DCC866",
 		"tab.border": "#221510",
 		"editorGroupHeader.tabsBackground": "#221510",
+		"editorGroupHeader.tabsBorder": "#3D3026",
 		"editorGroupHeader.noTabsBackground": "#221510",
 		"titleBar.activeBackground": "#221510",
 		"titleBar.activeForeground": "#E8DCC8",
